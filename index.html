@@ -10,28 +10,32 @@
 </head>
 <body>
     <header>
-        <nav class="topnav" id="myTopnav">
-                <a href="#home">Home</a>
-                <a href="#!home">Not Home</a>
-                <a href="#adress">Adress</a>
-                <a href="#disco">Disco</a>
-                <a href="#whatAbout">Whatabouta?</a>
-                <a href="javascript:void(0);" class="icon" onclick="dropMenu()">
-                    <i class="fa fa-bars"></i>
-                </a>
+        <nav>
+            <ul class="nav-list" id="myTopnav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#!home">Not Home</a></li>
+                <li><a href="#!home">Not Home</a></li>
+                <li><a href="#!home">Not Home</a></li>
+                <li><a href="#!home">Not Home</a></li>
+                <li class="hamburger"><a href="javascript:void(0);" class="burgerLink"  onclick="dropMenu()">
+                  <div class="fa fa-bars"></div>
+                </a></li>
+            </ul>
         </nav>
     </header>
-    <h1>Hello Responsive navbar</h1>
+    <h1>Musician</h1>
+    
 
 </body>
 
 <script>
 function dropMenu() {
+
   var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
+  if (x.className === "nav-list") {
     x.className += " responsive";
   } else {
-    x.className = "topnav";
+    x.className = "nav-list";
   }
 }
 </script>
